@@ -3,3 +3,29 @@ A primeira coisa que você deve fazer ao instalar Git é configurar seu nome de 
 
 $ git config --global user.name "Fulano de Tal"
 $ git config --global user.email fulanodetal@exemplo.br
+
+Gerando a chave SSH
+$ ssh-keygen -t rsa -b 4096 -C "joel_fernandes@hotmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Z/5E7vNNmPB90UTtfRr3SC+LUxCWDx4eCtaJckACvo8 joel_fernandes@hotmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|  ....o. o . .  o|
+| .   .. = o B  ..|
+|  .    + . = * .o|
+|   .      . + +.*|
+|  .     S o oo B+|
+|   o     + o o=++|
+|  E .     . oo+o+|
+|           ++ .o.|
+|            o+. .|
++----[SHA256]-----+
+
+Copiar o conteúdo da chave
+cat /root/.ssh/id_rsa.pub
